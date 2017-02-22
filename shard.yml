@@ -2,12 +2,17 @@ name: crystal-example
 version: 0.1.0
 
 authors:
-  -  <>
+  -  lgphp<1789666@qq.com>
 
 targets:
   crystal-example:
     main: src/crystal-example.cr
 
+
+dependencies:
+  emoji:
+    github: veelenga/emoji.cr
+    branch: master
 crystal: 0.21.0
 
 license: MIT

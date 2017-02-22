@@ -1,0 +1,6 @@
+version: 1.0
+shards:
+  emoji:
+    github: veelenga/emoji.cr
+    commit: f1bbf6278536a4c4cf6480111ec81d70a96f175b
+

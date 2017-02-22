@@ -1,7 +1,7 @@
 
 nonce_str = SecureRandom.urlsafe_base64(16, true)
 dicts = {"appid" =>"1929191", "mch_id" =>"09921", "device_info"=>"web", "body"=>"test","nonce_str"=>"#{nonce_str}"}
-dicts_keys = dicts.keys.sort!
+dicts_keys = dicts.keys.sort
 strint_a = ""
 dicts_keys.each  do |e|
 		v = dicts[e]
