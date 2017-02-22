@@ -52,3 +52,38 @@ puts arr
 
  arr.sort!   #有!号的都是自身要被编辑过的，没有!号的方法是返回值
 puts arr
+
+module Login
+  extend self
+  def a(args_name)
+    puts args_name
+  end
+  def b(args_name)
+      puts args_name
+  end
+end
+
+
+c = Ceshi.new("我是原来的值")
+c.a "test"
+cc = c.edit_k
+puts cc.k , c.k
+c.edit_k!
+puts  c.k
+
+class Ceshi
+  include Login
+  property k
+  def initialize(@k)
+
+  end
+  def edit_k!
+      @k = "本身和返回值都修改了"
+      self
+  end
+  def edit_k
+    that = Ceshi.new("修改")
+    that.k ="修改过了，返回值修改，本身不修改"
+    that
+  end
+end
