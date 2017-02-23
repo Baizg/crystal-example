@@ -13,6 +13,9 @@ dependencies:
   emoji:
     github: veelenga/emoji.cr
     branch: master
+  email:
+    github: lgphp/crystal-email
+    branch: master
 crystal: 0.21.0
 
 license: MIT

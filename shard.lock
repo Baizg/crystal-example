@@ -1,5 +1,9 @@
 version: 1.0
 shards:
+  email:
+    github: lgphp/crystal-email
+    commit: 8ca0d8accd32f0c17a60e1fa44e1b535722c24b7
+
   emoji:
     github: veelenga/emoji.cr
     commit: f1bbf6278536a4c4cf6480111ec81d70a96f175b
