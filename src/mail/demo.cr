@@ -10,7 +10,7 @@ end
 EMail.send("smtp.126.com", 25,
   on_failed: on_failed,
   use_tls: true,
-  auth: {"lgg1028", "lingxue530"}) do
+  auth: {"lgg1028", "password"}) do
   subject "发送邮件"
   from "lgg1028@126.com"
   to "1789666@qq.com"

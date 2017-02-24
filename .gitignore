@@ -3,3 +3,4 @@
 /bin/
 /.shards/
 /src/fiber/dbservice.json
+/src/fiber/demo.cr
