@@ -16,6 +16,10 @@ dependencies:
   email:
     github: lgphp/crystal-email
     branch: master
+    dependencies:
+  JsonSerializer:
+    github: lgphp/json-serializer
+    branch: master
 crystal: 0.21.0
 
 license: MIT

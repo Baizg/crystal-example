@@ -1,5 +1,9 @@
 version: 1.0
 shards:
+  JsonSerializer:
+    github: lgphp/json-serializer
+    commit: 993db6240f3be0b3044d14fff0864d9bfc34dcf0
+
   email:
     github: lgphp/crystal-email
     commit: 8ca0d8accd32f0c17a60e1fa44e1b535722c24b7
