@@ -9,7 +9,7 @@ module Server
         socket.accept? do |client|
           begin
             data = client.gets
-            ret = JSON.parse(data.as(String)) # 在接收的时候一定要先用parse将json字符串转成json::any类型，用to_s也可以
+            ret = JSON.parse(data.as(String)) # 在接收的时候一定要先用parse将（用JSON.parse(data.to_s)也可以）json字符串转成json::any类型，
             puts "retcode=#{ret["retcode"]}", "data=#{ret["data"]}", "username=#{ret["data"][0]["username"]}"
             client.puts "收到数据" # 返回给客户端数据  必须用puts方法，如果不用puts方法传送的话，就得有结尾\r\n来结束
           rescue ex
